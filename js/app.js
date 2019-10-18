@@ -25,18 +25,18 @@ function centerY(shapeHeight) {
 
 /* Example of using a mousedown event to create svg elements
    ========================================================================== */
-// artBoard.addEventListener("mousedown", drawOnClick);
+artBoard.addEventListener("mousedown", drawOnClick);
 
-// function drawOnClick(event) {
-//   const circle = new Circle(20, "black");
-//   circle.draw(event.offsetX, event.offsetY);
-// }
+function drawOnClick(event) {
+  const circle = new Circle(20, "#242614");
+  circle.draw(event.offsetX, event.offsetY);
+}
 
 /* Example of using a loop to create svg elements
    ========================================================================== */
-// for(let i = 0; i < 500; i+=50){
-//   const circle = new Circle(20, "black");
-//   circle.draw(i, 100);
+// for(let i = 0; i < artBoardWidth; i+=60){
+//   const circle = new Circle(20, "#798C35");
+//   circle.draw(i, i);
 // }
 
 /* Example of creating elements line by line
