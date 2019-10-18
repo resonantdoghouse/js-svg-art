@@ -28,8 +28,15 @@ function centerY(shapeHeight) {
 artBoard.addEventListener("mousedown", drawOnClick);
 
 function drawOnClick(event) {
-  const circle = new Circle(20, "#242614");
-  circle.draw(event.offsetX, event.offsetY);
+  // randomChance, a number between 1 & 0 which also can be used as true or false
+  const randomChance = Math.round(Math.random());
+  if (randomChance) {
+    const circle = new Circle(20, "#242614");
+    circle.draw(event.offsetX, event.offsetY);
+  } else {
+    const box = new Rect(40, 40, "#798C35");
+    box.draw(event.offsetX - box.width / 2, event.offsetY - box.height / 2);
+  }
 }
 
 /* Example of using a loop to create svg elements
