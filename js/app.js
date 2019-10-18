@@ -41,14 +41,14 @@ function centerY(shapeHeight) {
 
 /* Example of creating elements line by line
    ========================================================================== */
-const box1 = new Rect(300, 400, "#485922");
-box1.draw(0, 0);
+// const box1 = new Rect(300, 400, "#485922");
+// box1.draw(0, 0);
 
-const box2 = new Rect(200, 200, "#798C35");
-box2.draw(centerX(box2.width), centerY(box2.height));
+// const box2 = new Rect(200, 200, "#798C35");
+// box2.draw(centerX(box2.width), centerY(box2.height));
 
-const box3 = new Rect(150, 150, "#B4BF5E");
-box3.draw(centerX(box3.width), centerY(box3.height));
+// const box3 = new Rect(150, 150, "#B4BF5E");
+// box3.draw(centerX(box3.width), centerY(box3.height));
 
-const circle1 = new Circle(60, "#F2F2F2", "#242614", 5);
-circle1.draw(artBoard.clientWidth / 2, artBoard.clientHeight / 2);
+// const circle1 = new Circle(60, "#F2F2F2", "#242614", 5);
+// circle1.draw(artBoard.clientWidth / 2, artBoard.clientHeight / 2);
