@@ -13,16 +13,25 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1>JavaScript SVG</h1>
 
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      id="artboard"
-      width="600"
-      height="800"
-      viewbox="0 0 600 800"
-    ></svg>
+    <header>
+        <h1>JavaScript SVG</h1>
+        <button id="draw-btn">draw</button>
+        <button id="stop-btn" disabled>stop</button>
+    </header>
 
+    <main>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        id="artboard"
+        width="600"
+        height="800"
+        viewbox="0 0 600 800"
+      ></svg>
+    </main>
+
+
+    <footer>~ &copy; 2019</footer>
     <!-- Classes -->
     <script src="./js/circle.js"></script>
     <script src="./js/rect.js"></script>

@@ -5,6 +5,9 @@ const artBoard = document.getElementById("artboard");
 const artBoardWidth = artBoard.clientWidth;
 const artBoardHeight = artBoard.clientHeight;
 
+const drawBtn = document.getElementById("draw-btn");
+const stopBtn = document.getElementById("stop-btn");
+
 /* ==========================================================================
    Functions
    ========================================================================== */
@@ -25,7 +28,17 @@ function centerY(shapeHeight) {
 
 /* Example of using a mousedown event to create svg elements
    ========================================================================== */
-artBoard.addEventListener("mousedown", drawOnClick);
+drawBtn.addEventListener("click", () => {
+  artBoard.addEventListener("mousedown", drawOnClick);
+  stopBtn.disabled = false;
+  drawBtn.disabled = true;
+});
+
+stopBtn.addEventListener("click", () => {
+  artBoard.removeEventListener("mousedown", drawOnClick);
+  stopBtn.disabled = true;
+  drawBtn.disabled = false;
+});
 
 function drawOnClick(event) {
   // randomChance, a number between 1 & 0 which also can be used as true or false
